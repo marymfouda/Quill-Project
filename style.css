@@ -26,7 +26,7 @@
      --text-h1:6.2rem;
 
     /* FONT WEIGHT */
-     --font-weight-normal:400;
+     --font-weight-normal:300;
      --font-weight-bold:700;
 
     /* LINE HEIGHT */
@@ -125,11 +125,17 @@ a {
     text-decoration: none;
     font-size: var(--text-base);
     display: inline-block;
+    color: var(--gray-base);
+
 }
+
 span{
     display: inline-block;
 }
+.a:link , .a:visited , a:hover , a:active {
+    color: var(--gray-Shade);
 
+}
 .small-text {
     font-size: var(--text-sm);
 }
@@ -150,6 +156,8 @@ span{
     color: var(--white);
     background-color: var(--primary-Shade);
     border: 2px solid var(--primary-Shade);
+    transform: scale(1.05 , 1.05);
+    box-shadow: 0px 3px 6px var(--gray-base);
 
 }
 .btn-primary-outline:link , .btn-primary-outline:visited {
@@ -161,6 +169,10 @@ span{
     color: var(--primary-Shade);
     background-color:var(--white) ;
     border: 2px solid var(--primary-Shade);
+    transform: scale(1.05 , 1.05);
+    box-shadow: 0px 3px 6px var(--gray-base);
+
+
 }
 
 .btn-secondary:link , .btn-secondary:visited {
@@ -172,6 +184,9 @@ span{
     color: var(--white);
     background-color: var(--secondary-Shade);
     border: 2px solid var(--secondary-Shade) ;
+    transform: scale(1.05 , 1.05);
+    box-shadow: 0px 3px 6px var(--gray-base);
+
 
 }
 .highlight{
@@ -194,7 +209,38 @@ span{
 .logo-sm {
     width: 80px;
 }
-
+.chat-container{
+    height: 7rem;
+    width: 7rem;
+    background-color: var(--primary-Tint);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 4rem;
+    right: 3rem;
+}
+.chat-icon{
+    height: 5rem;
+    width: 5rem;
+    color: #339af0;
+} 
+.beta{
+    position: relative;
+}
+.beta::after{
+    content: 'beta';
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.2rem;
+    background-color: var(--tertiary-base);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: var(--white);
+    transform: translate(80% , -80%);
+}
 /* ______________ SECTIONS ______________ */
 
 /* ________ HEADER ________ */
@@ -207,6 +253,9 @@ span{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
 }
 .nav-btn-container{
     display: flex;
@@ -231,6 +280,7 @@ span{
 }
 .hero-paragraph{
     margin-bottom: 5rem;
+    text-align: center;
 }
 .hero-btn-container {
     display: flex;
@@ -246,6 +296,19 @@ span{
 .feature-main-heading {
     text-align: center;
     margin-bottom: 8rem;
+}
+.features-grid-container{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr) ;
+    row-gap: 15rem;
+    column-gap: 5rem;
+    justify-items: center;
+    align-items: center;
+}
+.img-swap {
+    grid-row: 2 / 3 ;
+    grid-column: 1 / 2;
+
 }
 .feature-heading {
     margin-bottom: 2rem;
@@ -297,4 +360,7 @@ span{
 }
 .social-icons {
     width: 20px;
+}
+.heart{
+    color: var(--secondary-base);
 }

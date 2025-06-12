@@ -1,0 +1,55 @@
+/* LG - LAPTOP: 1024px - 1280px */
+@media (max-width: 72rem){
+
+    html{
+        font-size: 56.25%;
+    }
+    .features-grid-container{
+        column-gap: 2rem;
+    }
+    .cta-section{
+            margin-bottom: 15rem;
+
+    }
+}
+/* MD - TAPLETS: 768px - 1024px */
+@media(max-width: 51rem){
+    html{
+        font-size: 50%;
+    }
+}
+/* SM - PHONE: 576px - 768px */
+@media (max-width: 43rem ){
+    html{
+        font-size: 43.75%;
+    }
+    .features-grid-container{
+        row-gap: 5rem;
+        column-gap: 0.5rem;
+    }
+
+}
+/* XS - PHONE PORTRAINT : < 576px  */
+@media(max-width: 34rem){
+    html{
+      font-size: 37.5%;
+    }
+    .hero-break{
+        display: none;
+    }
+    .hero-section{
+        height: auto;
+    }
+    .features-grid-container{
+        grid-template-columns: 1fr;
+    }
+    .img-swap {
+        grid-row: auto ;
+        grid-column: auto;
+    }
+    .cta-card{
+        padding: 5rem 10rem;
+    }
+
+
+}
